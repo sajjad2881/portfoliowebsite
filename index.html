@@ -16,24 +16,39 @@
   </head>
 
   <body class="bg-gray-200">
+   
+    <div id="navbar-placeholder">
+      
+    </div>
+    <script>
+    $(function(){
+      $("#navbar-placeholder").load("navbar.html");
+    });
+    </script>
+
+
+
+<!--
+
+  
 
     <script>
       $.get("navbar.html", function(data){
           $("#nav-placeholder").replaceWith(data);
       });
     </script>
-      
+
 
     <div id="navbar-placeholder">
     </div>
     <script>
     $(function(){
-      $("#nabar-placeholder").load("navbar.html");
+      $("#navbar-placeholder").load("navbar.html");
     });
     </script>
 
 
-<!--
+
     <nav class="font-sans bg-gray-200 text-center flex justify-between my-4 mx-auto container overflow-hidden items-center">
   <div class="flex items-center">
     <a href="/" class="mr-4 w-32">

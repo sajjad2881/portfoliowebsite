@@ -30,23 +30,33 @@
             <br><br>
             Alternatively, fill out this form and I'll get back to you ASAP!
             
-            <br><br><br><br>
+            <br><br><br>
             
             </div>
 
+            <div class="box-content bg-red-300 bg-opacity-60 p-6 rounded-lg max-w-3xl mx-auto items-center text-center space-x-8 text-2xl">
+              <!--space-x-8 //// rounded-xl shadow-md flex -->
             <form name="contact" method="POST" data-netlify="true">
               <p>
-                <label>Your Name: <input type="text" name="name" /></label>   
+                <div class="pb-1">Name:</div> 
+                <label><input class="rounded w-2/5" type="text" name="name" /></label>   
               </p>
+              <br>
               <p>
-                <label>Your Email: <input type="email" name="email" /></label>
+                <div class="pb-1">Email:</div> 
+                <label><input class="rounded w-2/5" type="email" name="email" /></label>
               </p>
-                <label>Message: <textarea name="message"></textarea></label>
+              <br>
+                <div class="pb-2">Message:</div> 
+                <label><textarea class="rounded w-4/5" name="message"></textarea></label>
               </p>
+              <br>
               <p>
-                <button type="submit">Send</button>
+                <button class="center px-4 py-1 text-base text-purple-600 font-semibold rounded-full border border-purple-200 hover:text-white hover:bg-purple-600 hover:border-transparent focus:outline-none focus:ring-2 focus:ring-purple-600 focus:ring-offset-2" type="submit">Sumbit</button>
+               
               </p>
             </form>
+          </div>
 
             
             <!--
